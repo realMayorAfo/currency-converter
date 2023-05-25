@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-image: url(./cloud2.jfif);">
+    <div id="disp"></div>
+    <div style="display:flex;flex-direction: column; padding: 30px;" >
+        <input type="text" value="" id="naira" placeholder="Input a number" style="margin: 8px; padding:15px; font-weight: bolder; font-size: 2em;">
+        <button style="color: white; background-color:red; padding: 10px; margin: 8px; border-radius: 15px; height:10vh; " onclick="first()">Click to Convert  from Dollar to Naira</button>
+        <button style="color: white; background-color:red; padding: 10px; margin: 8px; border-radius: 15px; height:10vh;" onclick="second()" >Click to Convert from Pounds to Naira</button>
+        <button style="color: white; background-color:red; padding: 10px; margin: 8px; border-radius: 15px; height:10vh;" onclick="thrid()">Click to Convert from cedis to Naira</button>
+        <button style="color: white; background-color:red; padding: 10px; margin: 8px; border-radius: 15px; height:10vh;" onclick="fourth()">Click to Convert from Euro to Naira</button>
+        <button style="color: white; background-color:red; padding: 10px;margin: 8px; border-radius: 15px; height:10vh;" onclick="fifth()">Click to Convert from naira to Dollar</button>
+        <button style="color: white; background-color:red; padding: 10px;margin: 8px; border-radius: 15px; height:10vh;" onclick="sixth()">Click to Convert from Naira to Pounds</button>
+        <button style="color: white; background-color:red; padding: 10px;margin: 8px; border-radius: 15px; height:10vh;">Click to convert from Euro to Naira </button>
+        <button style="color: white; background-color:red; padding: 10px;margin: 8px; border-radius: 15px; height:10vh;">Click to Convert from  Naira to Naira</button>
+    </div>
+
+   <script>
+    function first() {
+        var converter = document.getElementById("naira").value
+        var naira = 700
+        var result = converter*naira 
+        disp.innerText = "#" + result
+    }
+    function second() {
+        var converter = document.getElementById("naira").value
+        var naira = 900
+        var result = converter*naira 
+        disp.innerText = "#" + result
+    }
+    function third() {
+        var converter = document.getElementById("naira").value
+        var naira = 90
+        var result = converter*naira 
+        disp.innerText = "#" + result
+    }
+    function fourth() {
+        var converter = document.getElementById("naira").value
+        var naira = 900
+        var result = converter*naira 
+        disp.innerText = "#" + result
+    }
+    function fifth() {
+        var converter = document.getElementById("naira").value
+        var naira = 900
+        var result = converter*naira 
+        disp.innerText = "#" + result
+    }
+    function sixth() {
+        var converter = document.getElementById("naira").value
+        var naira = 900
+        var result = converter*naira 
+        disp.innerText = "#" + result
+    }
+   </script>
+
+   
+</body>
+</html>

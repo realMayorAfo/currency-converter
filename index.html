@@ -13,11 +13,11 @@
         <button style="color: white; background-color:red; padding: 10px; margin: 8px; border-radius: 15px; height:10vh; " onclick="first()">Click to Convert  from Dollar to Naira</button>
         <button style="color: white; background-color:red; padding: 10px; margin: 8px; border-radius: 15px; height:10vh;" onclick="second()" >Click to Convert from Pounds to Naira</button>
         <button style="color: white; background-color:red; padding: 10px; margin: 8px; border-radius: 15px; height:10vh;" onclick="thrid()">Click to Convert from cedis to Naira</button>
-        <button style="color: white; background-color:red; padding: 10px; margin: 8px; border-radius: 15px; height:10vh;" onclick="fourth()">Click to Convert from Euro to Naira</button>
-        <button style="color: white; background-color:red; padding: 10px;margin: 8px; border-radius: 15px; height:10vh;" onclick="fifth()">Click to Convert from naira to Dollar</button>
+        <button style="color: white; background-color:red; padding: 10px; margin: 8px; border-radius: 15px; height:10vh;" onclick="fourth()">Click to Convert from Naira to Dollar</button>
+        <button style="color: white; background-color:red; padding: 10px;margin: 8px; border-radius: 15px; height:10vh;" onclick="fifth()">Click to Convert from Naira to Euro</button>
         <button style="color: white; background-color:red; padding: 10px;margin: 8px; border-radius: 15px; height:10vh;" onclick="sixth()">Click to Convert from Naira to Pounds</button>
-        <button style="color: white; background-color:red; padding: 10px;margin: 8px; border-radius: 15px; height:10vh;">Click to convert from Euro to Naira </button>
-        <button style="color: white; background-color:red; padding: 10px;margin: 8px; border-radius: 15px; height:10vh;">Click to Convert from  Naira to Naira</button>
+        <button style="color: white; background-color:red; padding: 10px;margin: 8px; border-radius: 15px; height:10vh;" onclick="seventh()">Click to convert from Naira to Yen </button>
+        <button style="color: white; background-color:red; padding: 10px;margin: 8px; border-radius: 15px; height:10vh;" onclick="eight()">Click to Convert from Naira to Cedis</button>
     </div>
 
    <script>
@@ -41,21 +41,33 @@
     }
     function fourth() {
         var converter = document.getElementById("naira").value
-        var naira = 900
+        var naira = 700
         var result = converter*naira 
-        disp.innerText = "#" + result
+        disp.innerText = "$" + result
     }
     function fifth() {
         var converter = document.getElementById("naira").value
         var naira = 900
-        var result = converter*naira 
-        disp.innerText = "#" + result
+        var result = converter/naira 
+        disp.innerText = "E" + result
     }
     function sixth() {
         var converter = document.getElementById("naira").value
         var naira = 900
-        var result = converter*naira 
-        disp.innerText = "#" + result
+        var result = converter/naira 
+        disp.innerText = "E" + result
+    }
+    function Seventh() {
+        var converter = document.getElementById("naira").value
+        var naira = 600
+        var result = converter/naira 
+        disp.innerText = "Y" + result
+    }
+    function eight() {
+        var converter = document.getElementById("naira").value
+        var naira = 90
+        var result = converter/naira 
+        disp.innerText = "&" + result
     }
    </script>
 
